@@ -1,7 +1,6 @@
 from pathlib import Path
 
 class Site:
-
     def __init__(self, source, dest, parsers=None):
         self.source = Path (source)
         self.dest =  Path (dest)
@@ -20,7 +19,7 @@ class Site:
         parser = self.load_parser(path.suffix)
         if parser is not None:
             parser.parse(path, self.source, self.dest)
-        else
+        else:
             print("Not Implemented")
 
     def build(self):
