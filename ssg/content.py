@@ -26,7 +26,7 @@ class Content(Mapping):
         return self.data["type"]
 
     @type.setter
-    def type(self, type)
+    def type(self, type):
         self.data["type"] = type
 
 
@@ -44,4 +44,3 @@ class Content(Mapping):
         return str(data)
 
     def __str__(self):
-        
